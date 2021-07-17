@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:goodreads/screens/details_screen.dart';
 import 'package:goodreads/widgets/book_rating.dart';
 import 'package:goodreads/widgets/reading_card_list.dart';
 import 'package:goodreads/widgets/two_side_rounded_button.dart';
@@ -51,8 +52,18 @@ class HomeScreen extends StatelessWidget {
                         ReadingListCard(
                           image: "assets/images/book-1.png",
                           title: "Crushing & Influence",
-                          auth: "Dula Dil",
+                          auth: "Dulanjali Dilshani",
                           rating: 4.9,
+                          pressDetails: (){
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                builder: (context){
+                                  return DetailsScreen();
+                                },
+                                ),
+                            );
+                          },
                         ),
                         ReadingListCard(
                           image: "assets/images/book-2.png",
@@ -145,7 +156,7 @@ class HomeScreen extends StatelessWidget {
                                             ],
                                         ),
                                         ),
-                                        Image.asset("assets/images/book-.png",
+                                        Image.asset("assets/images/book-1.png",
                                         width: 55,
                                         ),
                                       ],
