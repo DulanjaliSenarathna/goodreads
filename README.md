@@ -2,6 +2,9 @@
 
 Book Reading Flutter Application
 
+![goodreads](https://user-images.githubusercontent.com/59603716/126901969-90bcfadd-ead2-45aa-91d0-c21001da5ec0.png)
+
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
